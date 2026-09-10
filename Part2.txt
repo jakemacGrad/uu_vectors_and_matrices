@@ -1,0 +1,21 @@
+
+
+My initial attempt at creating an algorithm that better recommends songs than the strategies shown in part 1 of the lab did not go well.
+ The plan was iterate through the raw inner product, cosine similarity, and TF-IDF-based cosine similarity raw inner product, cosine similarity, 
+ and TF-IDF-based cosine similarity calculations using a smaller dataframe to make the calculations more efficient. 
+ I was going to compare runtime and the average of the dot, cosine, and TF-IDF scores to the runtime and scores presented in earlier steps. 
+ The thought was if I could make recommendations quicker while maintaining scores that are equivalent to the scores in step 1, 4, and 5, I would have 
+ outperformed the available baselines and done something creative. 
+
+
+Imagine you were listening to a song on Spotify, but every time you click on a song it took 10 seconds to load the next recommended song.
+ This was the problem wanted to test. On my computer it took ~5 to 20 seconds to load my top 3 recommended songs. In terms of testable baselines, 
+ I would have restarted the kernel and run all the way through my code. In the bottom left of each code chunk, there is a timer that times
+  how long it takes to execute that code chunk. The plan was to find the average time it took to execute steps 1, 4, and 5 then average out 
+ the time it took to run my code in part two. After that, I would have looked at the top 3 songs for parts 1, 4, and 5, taken their average score
+  and compared those scores to the score calculated in part 6. If the score in part 1 and part 2 averaged out to be equal, but the runtime in part
+   2 was faster than the runtimes in part 1, the algorithm would have been deemed a success. 
+
+
+Overall, I do believe the existing options work well. The runtimes are slow however the content produced from the cosine similarity
+ calculation does make sense. These calculations could  also be improved by comparing song’s bpm, user’s listening habits, how often the songs are on a playlist together and much more. 
